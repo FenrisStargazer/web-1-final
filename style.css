@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Eagle+Lake&family=IM+Fell+English&family=Milonga&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+
+html {
+  background-image: url("https://imgur.com/U5i8iUw.png");
+}
+.main {
+  background-color: white;
+  margin: 25px;
+  border: 5px solid black;
+  padding: 25px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 50px 50px 20px 50px;
+}
+#logo {
+  height: 67px;
+  width: 100px;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+  align-self: center;
+}
+#name {
+  font-family: "Milonga", sans-serif;
+  font-size: 30px;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+#title {
+  font-family: "Eagle Lake", sans-serif;
+  font-size: 16px;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+}
+#tagline {
+  font-family: "Della Respira", sans-serif;
+  font-size: 13px;
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 1;
+  align-self: center;
+  text-align: center;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-row: 2fr;
+  grid-template-column: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  justify-content: space-around;
+  align-items: center;
+}
+a {
+  font-family: Overlock, serif;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #b02f00;
+}
+
+.line {
+  width: 1px;
+  height: 20px;
+  background-color: black;
+  border: 0px;
+}
+#home {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+#1 {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+#about {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+#2 {
+  grid-row: 1 / span 1;
+  grid-column: 4 / span 1;
+}
+#ee {
+  grid-row: 1 / span 1;
+  grid-column: 5 / span 1;
+}
+#3 {
+  grid-row: 1 / span 1;
+  grid-column: 6 / span 1;
+}
+#ppw {
+  grid-row: 1 / span 1;
+  grid-column: 7 / span 1;
+}
+#4 {
+  grid-row: 1 / span 1;
+  grid-column: 8 / span 1;
+}
+#contact {
+  grid-row: 1 / span 1;
+  grid-column: 9 / span 1;
+}
+
+#home2 {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  display: none;
+}
+#about2 {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+  display: none;
+}
+#ee2 {
+  grid-row: 1 / span 1;
+  grid-column: 5 / span 1;
+  display: none;
+}
+#ppw2 {
+  grid-row: 1 / span 1;
+  grid-column: 7 / span 1;
+  display: none;
+}
+#contact2 {
+  grid-row: 1 / span 1;
+  grid-column: 9 / span 1;
+  display: none;
+}
+
+.edexp {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 10px 1fr;
+}
+#ed {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+#exp {
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+p {
+  font-family: "IM FELL English", serif;
+  font-size: 15px;
+}
+h3 {
+  font-family: "Eagle Lake", sans-serif;
+  font-size: 15px;
+}
+#contactbox {
+  text-align: center;
+}
+#email {
+  text-decoration: underline;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  grid-gap: 5px;
+}
+.projectcard {
+  width: 325px;
+}
+
+@media only screen and (max-width: 850px) {
+  #logo {
+    height: 50px;
+    width: 75px;
+  }
+  #name {
+    font-size: 25px;
+  }
+  #title {
+    font-size: 12px;
+  }
+  #tagline {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #logo {
+    height: 40px;
+    width: 60px;
+  }
+  #name {
+    font-size: 20px;
+  }
+  #title {
+    font-size: 10px;
+  }
+  #tagline {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #home {
+    display: none;
+  }
+  #about {
+    display: none;
+  }
+  #ee {
+    display: none;
+  }
+  #ppw {
+    display: none;
+  }
+  #contact {
+    display: none;
+  }
+
+  #home2 {
+    display: inline;
+  }
+  #about2 {
+    display: inline;
+  }
+  #ee2 {
+    display: inline;
+  }
+  #ppw2 {
+    display: inline;
+  }
+  #contact2 {
+    display: inline;
+  }
+  .header {
+    grid-template-rows: 50px 50px 20px 20px 50px;
+  }
+  .menu {
+    grid-row: 5 / span 1;
+  }
+  #name {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 2;
+    justify-self: center;
+  }
+  #title {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 2;
+    justify-self: center;
+  }
+  #tagline {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+  }
+  .edexp {
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+}
+#ed {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+#exp {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+footer {
+  width: 100%;
+  background-color: #471300;
+  color: white;
+  text-align: center;
+  padding: 1px 0px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
